@@ -2401,7 +2401,7 @@ Boot procedure in detail:
    2. udev daemon
 5. System switches to root filesystem on disk
 6. Loads systemd from root FS on disk
-   1. Can configure to load **emergency.target** or **rescue.target**
+   1. Can configure to load **emergency.target** (smallest target) or **rescue.target** (next smallest)
 7. Default target is loaded
 
 Note: Login prompt can appear before the above is completed.
